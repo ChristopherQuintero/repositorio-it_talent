@@ -1,0 +1,21 @@
+.home {
+    text-align: center;
+}
+
+.contenedor {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonera {
+    /* background: red; */
+    width: max-content;
+    border: 2px solid #343a40;
+    border-radius: 5px;
+}
+
+.botonera a {
+    margin: 30px 15px;
+}
