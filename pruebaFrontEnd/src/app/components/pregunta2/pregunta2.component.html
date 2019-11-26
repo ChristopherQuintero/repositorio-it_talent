@@ -1,0 +1,27 @@
+<div class="card mb-3" style="margin: 1vh auto !important;">
+    <div class="card-header">Datos para Item N° 2</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title text-center">Listado de Datos</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <!-- <th>N°</th> -->
+                        <th>Paragraph</th>
+                        <th>Number</th>
+                        <th>HasCopyright</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let datos of list.data | paginate: {itemsPerPage: 3, currentPage: pageActual}; ">
+                        <!-- <td>{{i+1}}</td> -->
+                        <td>{{datos.paragraph}}</td>
+                        <td>{{datos.number}}</td>
+                        <td>{{datos.hasCopyright}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pagination-controls (pageChange)="pageActual = $event"></pagination-controls>
+        </div>
+    </div>
+</div>

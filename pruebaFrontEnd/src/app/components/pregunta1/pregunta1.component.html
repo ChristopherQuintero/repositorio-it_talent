@@ -1,0 +1,25 @@
+<div class="card mb-3" style="margin: 1vh auto !important;">
+    <div class="card-header">Datos para Item N° 1</div>
+    <div class="card-body text-primary">
+        <h5 class="card-title text-center">Listado de Datos</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Datos</th>
+                        <!-- <th>Nombre</th> -->
+                        <!-- <th>Codigo</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let number of list.data | paginate: {itemsPerPage: 5, currentPage: pageActual}">
+                        <td>{{number}}</td>
+                        <!-- <td>{{number.name_product}}</td> -->
+                        <!-- <td>{{number.sku_product}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+            <pagination-controls (pageChange)="pageActual = $event"></pagination-controls>
+        </div>
+    </div>
+</div>

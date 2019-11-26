@@ -1,5 +1,8 @@
 export interface Endpoint2 {
-    paragraph: string;
-    number: number;
-    hasCopyright: boolean;
+    success: boolean;
+    data: {
+        paragraph: string;
+        number: number;
+        hasCopyright: boolean;
+    };
 }

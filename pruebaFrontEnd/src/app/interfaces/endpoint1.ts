@@ -1,3 +1,4 @@
 export interface Endpoint1 {
-    numero: number;
+    success: boolean;
+    data: number;
 }
