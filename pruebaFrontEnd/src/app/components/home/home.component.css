@@ -28,4 +28,9 @@
 
 .botonera a {
     margin: 30px 15px;
+    transition: all 0.5s;
+}
+
+.botonera a:hover {
+    transform: scale(1.1);
 }
